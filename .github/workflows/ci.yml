@@ -15,12 +15,11 @@ jobs:
   test:
     name: Run Tests & Generate JUnit Report
     strategy:
-      fail-fast: false
       matrix:
-        nodejs_version: ['18', '20', '22']
+        nodejs_version: [18, 20, 22]
         operating_system: [ubuntu-latest, macos-latest]
         exclude:
-          - nodejs_version: '18'
+          - nodejs_version: 18
             operating_system: macos-latest
     runs-on: ${{ matrix.operating_system }}
 
@@ -47,14 +46,14 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: junit-test-results-${{ matrix.operating_system }}-node-${{ matrix.nodejs_version }}
+          name: junit-test-results
           path: test-results/junit.xml
 
       - name: Publish Test Report to GitHub UI
         uses: dorny/test-reporter@v1
         if: always()
         with:
-          name: Mocha Tests (${{ matrix.operating_system }}, Node ${{ matrix.nodejs_version }})
+          name: Mocha Tests Report
           path: test-results/junit.xml
           reporter: java-junit
 
