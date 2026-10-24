@@ -1,0 +1,14 @@
+node_modules
+dist
+test
+test-results
+coverage
+.git
+.gitignore
+.github
+Dockerfile
+docker-compose.yml
+README.md
+Makefile
+*.log
+.DS_Store

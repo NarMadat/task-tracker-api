@@ -1,0 +1,8 @@
+{
+  "extension": ["ts"],
+  "require": ["ts-node/register"],
+  "reporter": "mocha-multi-reporters",
+  "reporter-option": ["configFile=mocha-reporters.json"],
+  "timeout": 20000,
+  "exit": true
+}

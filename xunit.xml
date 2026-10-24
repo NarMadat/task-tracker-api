@@ -1,0 +1,28 @@
+<testsuite name="Mocha Tests" tests="26" failures="0" errors="0" skipped="0" timestamp="Sat, 24 Oct 2026 17:23:27 GMT" time="0.083">
+<testcase classname="HealthController (Unit)" name="should be defined" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/health/health.controller.spec.ts" time="0"/>
+<testcase classname="HealthController (Unit) getHealth" name="should return health status, uptime, timestamp and service name" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/health/health.controller.spec.ts" time="0.001"/>
+<testcase classname="HealthController (Unit) getLiveness" name="should return liveness probe status" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/health/health.controller.spec.ts" time="0"/>
+<testcase classname="HealthController (Unit) getReadiness" name="should return readiness probe status" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/health/health.controller.spec.ts" time="0"/>
+<testcase classname="TasksController (Unit)" name="should be defined" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/tasks/tasks.controller.spec.ts" time="0"/>
+<testcase classname="TasksController (Unit)" name="should create and retrieve tasks" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/tasks/tasks.controller.spec.ts" time="0"/>
+<testcase classname="TasksController (Unit)" name="should update a task" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/tasks/tasks.controller.spec.ts" time="0"/>
+<testcase classname="TasksController (Unit)" name="should delete a task" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/tasks/tasks.controller.spec.ts" time="0"/>
+<testcase classname="TasksService (Unit)" name="should be defined" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/tasks/tasks.service.spec.ts" time="0"/>
+<testcase classname="TasksService (Unit) create and findAll" name="should create a task with default status and return it in findAll" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/tasks/tasks.service.spec.ts" time="0"/>
+<testcase classname="TasksService (Unit) create and findAll" name="should create a task with explicit status" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/tasks/tasks.service.spec.ts" time="0"/>
+<testcase classname="TasksService (Unit) findById" name="should return the task if found" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/tasks/tasks.service.spec.ts" time="0"/>
+<testcase classname="TasksService (Unit) findById" name="should throw NotFoundException if task does not exist" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/tasks/tasks.service.spec.ts" time="0.001"/>
+<testcase classname="TasksService (Unit) update" name="should update task title and status" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/tasks/tasks.service.spec.ts" time="0"/>
+<testcase classname="TasksService (Unit) update" name="should throw NotFoundException when updating non-existent task" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/tasks/tasks.service.spec.ts" time="0"/>
+<testcase classname="TasksService (Unit) remove" name="should remove existing task" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/tasks/tasks.service.spec.ts" time="0"/>
+<testcase classname="TasksService (Unit) remove" name="should throw NotFoundException when deleting non-existent task" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/src/tasks/tasks.service.spec.ts" time="0"/>
+<testcase classname="App Endpoints (E2E) Health Probes" name="/health (GET) should return 200 with service metadata" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/test/app.e2e-spec.ts" time="0.008"/>
+<testcase classname="App Endpoints (E2E) Health Probes" name="/health/live (GET) should return 200 for Kubernetes liveness" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/test/app.e2e-spec.ts" time="0.001"/>
+<testcase classname="App Endpoints (E2E) Health Probes" name="/health/ready (GET) should return 200 for Kubernetes readiness" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/test/app.e2e-spec.ts" time="0.001"/>
+<testcase classname="App Endpoints (E2E) Tasks API CRUD" name="/tasks (POST) - should reject invalid payload (400 Bad Request)" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/test/app.e2e-spec.ts" time="0.006"/>
+<testcase classname="App Endpoints (E2E) Tasks API CRUD" name="/tasks (POST) - should create a new task (201 Created)" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/test/app.e2e-spec.ts" time="0.001"/>
+<testcase classname="App Endpoints (E2E) Tasks API CRUD" name="/tasks (GET) - should list all tasks" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/test/app.e2e-spec.ts" time="0.001"/>
+<testcase classname="App Endpoints (E2E) Tasks API CRUD" name="/tasks/:id (GET) - should return single task" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/test/app.e2e-spec.ts" time="0.001"/>
+<testcase classname="App Endpoints (E2E) Tasks API CRUD" name="/tasks/:id (PATCH) - should update task status" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/test/app.e2e-spec.ts" time="0.001"/>
+<testcase classname="App Endpoints (E2E) Tasks API CRUD" name="/tasks/:id (DELETE) - should delete task (204 No Content)" file="/Users/narekmadatyan/Desktop/projects/nestjs-devops-api/test/app.e2e-spec.ts" time="0.001"/>
+</testsuite>
