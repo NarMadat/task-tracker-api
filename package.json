@@ -15,7 +15,7 @@
     "test:e2e": "mocha --config .mocharc.json 'test/**/*.e2e-spec.ts'",
     "test:junit": "mocha --config .mocharc.json --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/junit.xml 'src/**/*.spec.ts' 'test/**/*.e2e-spec.ts'",
     "test:ci": "mocha --config .mocharc.ci.json 'src/**/*.spec.ts' 'test/**/*.e2e-spec.ts'",
-    "test:coverage": "c8 --reporter=text --reporter=lcov mocha --config .mocharc.json 'src/**/*.spec.ts' 'test/**/*.e2e-spec.ts'"
+    "test:coverage": "c8 --reporter=text --reporter=lcov --reporter=cobertura mocha --config .mocharc.json 'src/**/*.spec.ts' 'test/**/*.e2e-spec.ts'"
   },
   "dependencies": {
     "@nestjs/common": "^10.4.4",
