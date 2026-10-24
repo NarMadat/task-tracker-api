@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [main, master]
 
+permissions:
+  contents: read
+  checks: write
+  pull-requests: write
+
 jobs:
   test:
     name: Run Tests & Generate JUnit Report
@@ -43,7 +48,7 @@ jobs:
         with:
           name: Mocha Tests Report
           path: test-results/junit.xml
-          reporter: mocha-junit-reporter
+          reporter: java-junit
 
   docker-build:
     name: Build & Verify Docker Image
