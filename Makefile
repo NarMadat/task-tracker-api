@@ -32,14 +32,14 @@ test-coverage: ## Run tests with code coverage report
 	npm run test:coverage
 
 docker-build: ## Build production Docker image
-	docker build -t nestjs-devops-api:latest .
+	docker build -t task-tracker-api:latest .
 
 docker-run: ## Run Docker container locally
-	docker run -d --name nestjs-devops-api -p 3000:3000 nestjs-devops-api:latest
+	docker run -d --name task-tracker-api -p 3000:3000 task-tracker-api:latest
 
 docker-stop: ## Stop and remove local Docker container
-	docker stop nestjs-devops-api || true
-	docker rm nestjs-devops-api || true
+	docker stop task-tracker-api || true
+	docker rm task-tracker-api || true
 
 docker-compose-up: ## Start service via docker-compose
 	docker-compose up --build -d

@@ -21,7 +21,7 @@ describe('HealthController (Unit)', () => {
     it('should return health status, uptime, timestamp and service name', () => {
       const result = controller.getHealth();
       expect(result).to.have.property('status', 'ok');
-      expect(result).to.have.property('service', 'nestjs-devops-api');
+      expect(result).to.have.property('service', 'task-tracker-api');
       expect(result).to.have.property('uptime').that.is.a('number');
       expect(result).to.have.property('timestamp').that.is.a('string');
     });

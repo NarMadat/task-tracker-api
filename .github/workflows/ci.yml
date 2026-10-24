@@ -20,7 +20,6 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-          cache-dependency-path: 'nestjs-devops-api/package-lock.json'
 
       - name: Install dependencies
         run: npm ci
@@ -63,6 +62,6 @@ jobs:
         with:
           context: .
           push: false
-          tags: nestjs-devops-api:latest
+          tags: task-tracker-api:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max

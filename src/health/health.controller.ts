@@ -8,7 +8,7 @@ export class HealthController {
       status: 'ok',
       uptime: process.uptime(),
       timestamp: new Date().toISOString(),
-      service: 'nestjs-devops-api',
+      service: 'task-tracker-api',
     };
   }
 

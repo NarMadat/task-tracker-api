@@ -35,7 +35,7 @@ describe('App Endpoints (E2E)', () => {
         .expect(200);
 
       expect(response.body).to.have.property('status', 'ok');
-      expect(response.body).to.have.property('service', 'nestjs-devops-api');
+      expect(response.body).to.have.property('service', 'task-tracker-api');
       expect(response.body).to.have.property('uptime');
     });
 

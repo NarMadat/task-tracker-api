@@ -1,7 +1,7 @@
 {
-  "name": "nestjs-devops-api",
+  "name": "task-tracker-api",
   "version": "1.0.0",
-  "description": "Production-ready Nest.js API configured for DevOps CI/CD pipelines with Mocha and JUnit reporter",
+  "description": "Production-ready Task Tracker API configured for DevOps CI/CD pipelines with Mocha and JUnit reporter",
   "author": "",
   "private": true,
   "license": "UNLICENSED",

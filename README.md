@@ -1,4 +1,4 @@
-# Nest.js DevOps Starter API
+# Task Tracker API
 
 Готовая кодовая база на **Nest.js**, настроенная специально для изучения и построения **DevOps CI/CD пайплайнов** с использованием **Mocha** и **mocha-junit-reporter**.
 
@@ -32,7 +32,7 @@
 ## 📁 Структура проекта
 
 ```text
-nestjs-devops-api/
+task-tracker-api/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml               # Пайплайн GitHub Actions
@@ -76,7 +76,7 @@ nestjs-devops-api/
 ### 1. Установка зависимостей
 
 ```bash
-cd nestjs-devops-api
+cd task-tracker-api
 npm install
 ```
 
@@ -187,7 +187,7 @@ pipeline {
 ```bash
 make docker-build
 # или напрямую:
-docker build -t nestjs-devops-api:latest .
+docker build -t task-tracker-api:latest .
 ```
 
 ### Запуск контейнера
